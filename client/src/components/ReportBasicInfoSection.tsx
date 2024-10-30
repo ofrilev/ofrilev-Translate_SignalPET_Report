@@ -4,7 +4,7 @@ import ContactInfoSection from "./ContactInfoSection";
 import ParentDetailsSection from "./ParentDetailsSection";
 import ReportFindings from "./ReportFindings";
 import { reportBasicInfo } from "../utils/constants";
-import { translate } from "../utils/translate";
+
 
 const styles = {
     container: {
@@ -50,13 +50,13 @@ const ReportBasicInfoSection = () => {
                         }}
                     >
                         <span style={styles.segmentTitle} translate="yes">
-                            {translate(reportBasicInfo.service)}:
+                            {reportBasicInfo.service}:
                         </span>
                         <span style={styles.segmentContent}>SignalRAY</span>
                     </div>
                     <div style={styles.segmentContainer}>
                         <span style={styles.segmentTitle} translate="yes">
-                            {translate(reportBasicInfo.date)}:
+                            {reportBasicInfo.date}:
                         </span>
                         <span style={styles.segmentContent}>01-01-1994</span>
                     </div>

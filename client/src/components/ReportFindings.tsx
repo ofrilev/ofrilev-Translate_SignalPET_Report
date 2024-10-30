@@ -5,7 +5,7 @@ import { type Finding, type Findings } from "../models/finding";
 import { getRandomNumberInRange } from "../utils/numbers";
 import { selectRandomObjects } from "../utils/objects";
 import { randomXrayFinding } from "../utils/strings";
-import { translate } from "../utils/translate";
+
 
 const styles = {
     gap3: {
@@ -155,7 +155,7 @@ const ReportFinding = ({
                             : "text-report-light-gray ",
                     }}
                     translate="yes"
-                >{`${translate(finding.name)}`}</div>
+                >{finding.name}</div>
             </div>
             <div style={styles.gap25}>
                 <Pill filled={true} isNormal={isNormal} checked={checked} />

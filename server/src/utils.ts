@@ -14,9 +14,9 @@ const fetchFromAPI = async (wordsToFetch: string[], targetLan: string) => {
         body: JSON.stringify({
             source: "en",
             q: wordsToFetch,
-            target: targetLan,
-            format: "text",
-        }),
+                target: targetLan.toLocaleLowerCase(),
+                format: "text",
+            }),
     });
 };
 

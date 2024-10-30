@@ -1,5 +1,5 @@
 import { CSSProperties, ReactNode } from "react";
-import { translate } from "../utils/translate";
+
 
 interface ReportSectionInterface {
   children?: ReactNode;
@@ -35,12 +35,10 @@ const ReportSection = (props: ReportSectionInterface) => {
     <div style={{ ...styles.container, ...style }}>
       <div style={styles.headerContainer}>
         <span style={styles.titleText} translate="yes">
-          {typeof title == "string" ? translate(title) : title}
+          {title}
         </span>
         <span style={styles.titleText} translate="yes">
-          {typeof secondaryText == "string"
-            ? translate(secondaryText)
-            : secondaryText}
+          {secondaryText}
         </span>
       </div>
       <div style={{ ...styles.childrenWrapper, ...contentWrapperStyle }}>

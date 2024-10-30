@@ -1,5 +1,5 @@
 import { reportHeader } from "../utils/constants";
-import { translate } from "../utils/translate";
+
 
 const styles = {
     container: {
@@ -27,7 +27,7 @@ const ReportHeader = () => {
                 style={styles.logo}
             />
             <span style={styles.secondaryText} translate="yes">
-                {translate(reportHeader.secondaryText)}
+                {reportHeader.secondaryText}
             </span>
         </div>
     );

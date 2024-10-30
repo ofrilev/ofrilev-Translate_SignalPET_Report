@@ -30,7 +30,7 @@ Another important consideration when using caching is the caching policy. To mak
 3. Navigate to the LibreTranslate directory and run the service:
    ```bash
    cd LibreTranslate
-   bun run start --load-only en,es,de,pt,fr
+    ./start --load-only en,es,de,pt,fr
    ```
 4. Navigate to the server directory and run the server:
 
